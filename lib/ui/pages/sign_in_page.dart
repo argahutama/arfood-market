@@ -69,17 +69,19 @@ class _SignInPageState extends State<SignInPage> {
           padding: EdgeInsets.symmetric(horizontal: defaultMargin),
           child: isLoading
               ? SpinKitFadingCircle(size: 45, color: mainColor)
-              : RaisedButton(
+              : ElevatedButton(
                   onPressed: () {},
-                  elevation: 0,
-                  color: mainColor,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
+                  style: ElevatedButton.styleFrom(
+                    elevation: 0,
+                    primary: mainColor,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                   ),
                   child: Text(
                     'Sign In',
                     style: GoogleFonts.poppins(
-                        color: Colors.white, fontWeight: FontWeight.w500),
+                        color: Colors.black, fontWeight: FontWeight.w500),
                   ),
                 ),
         ),
@@ -90,14 +92,16 @@ class _SignInPageState extends State<SignInPage> {
           padding: EdgeInsets.symmetric(horizontal: defaultMargin),
           child: isLoading
               ? SpinKitFadingCircle(size: 45, color: mainColor)
-              : RaisedButton(
+              : ElevatedButton(
                   onPressed: () {
                     Get.to(SignUpPage());
                   },
-                  elevation: 0,
-                  color: greyColor,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
+                  style: ElevatedButton.styleFrom(
+                    elevation: 0,
+                    primary: greyColor,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                   ),
                   child: Text(
                     'Create New Account',
