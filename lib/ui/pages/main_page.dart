@@ -6,6 +6,9 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+  int selectedPage = 0;
+  PageController pageController = PageController(initialPage: 0);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,18 +18,47 @@ class _MainPageState extends State<MainPage> {
             color: Colors.white,
           ),
           SafeArea(
-            child: Container(
-              color: 'FAFAFC'.toColor(),
-            ),
-          ),
+              child: Container(
+            color: 'FAFAFC'.toColor(),
+          )),
           SafeArea(
-            child: Center(
-              child: FoodPage(),
+            child: PageView(
+              controller: pageController,
+              onPageChanged: (index) {
+                setState(() {
+                  selectedPage = index;
+                });
+              },
+              children: [
+                Center(
+                  child: FoodPage(),
+                ),
+                Center(
+                  child: IllustrationPage(
+                    title: 'Ouch! Hungry',
+                    subtitle: 'Seems you like haven\'t\nordered any food yet',
+                    picturePath: 'assets/love_burger.png',
+                    buttonTap1: () {},
+                    buttonTitle1: 'Find Foods',
+                  ),
+                ),
+                Center(
+                  child: Text('Profile'),
+                ),
+              ],
             ),
           ),
           Align(
             alignment: Alignment.bottomCenter,
-            child: CustomNavBar(),
+            child: CustomNavBar(
+              selectedIndex: selectedPage,
+              onTap: (index) {
+                setState(() {
+                  selectedPage = index;
+                });
+                pageController.jumpToPage(selectedPage);
+              },
+            ),
           )
         ],
       ),

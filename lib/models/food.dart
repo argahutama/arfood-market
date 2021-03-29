@@ -31,6 +31,8 @@ List<Food> mockFoods = [
       name: 'Sate Sayur Sultan',
       description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      ingredients:
+          'Daging & Kulit Ayam, Bawang Merah, Paprika, Bawang Bombay, Timun',
       price: 150000,
       rate: 4.5),
   Food(
@@ -40,6 +42,8 @@ List<Food> mockFoods = [
       name: 'Sate Sayur Sultan',
       description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      ingredients:
+          'Daging & Kulit Ayam, Bawang Merah, Paprika, Bawang Bombay, Timun',
       price: 150000,
       rate: 4.5),
   Food(
@@ -49,6 +53,8 @@ List<Food> mockFoods = [
       name: 'Sate Sayur Sultan',
       description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      ingredients:
+          'Daging & Kulit Ayam, Bawang Merah, Paprika, Bawang Bombay, Timun',
       price: 150000,
       rate: 4.5),
   Food(
@@ -58,6 +64,8 @@ List<Food> mockFoods = [
       name: 'Sate Sayur Sultan',
       description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      ingredients:
+          'Daging & Kulit Ayam, Bawang Merah, Paprika, Bawang Bombay, Timun',
       price: 150000,
       rate: 4.5)
 ];
