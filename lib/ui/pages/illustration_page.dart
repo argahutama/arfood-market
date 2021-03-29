@@ -70,9 +70,11 @@ class IllustrationPage extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: buttonTap1,
                     child: Text(
-                      buttonTitle1,
-                      style:
-                          blackFontStyle3.copyWith(fontWeight: FontWeight.w500),
+                      buttonTitle2 ?? '',
+                      style: blackFontStyle3.copyWith(
+                        fontWeight: FontWeight.w500,
+                        color: Colors.white,
+                      ),
                     ),
                     style: ElevatedButton.styleFrom(
                       elevation: 0,
