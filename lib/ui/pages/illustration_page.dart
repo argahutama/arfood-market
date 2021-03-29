@@ -25,8 +25,8 @@ class IllustrationPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            width: 50,
-            height: 50,
+            width: 150,
+            height: 150,
             margin: EdgeInsets.only(bottom: 50),
             decoration: BoxDecoration(
               image: DecorationImage(
